@@ -1,0 +1,35 @@
+.earphones_footer {
+  top: 2350px;
+}
+.earphones_page_history {
+  position: relative;
+  top: -1200px;
+}
+.earphones_page {
+  top: 1200px;
+}
+@media only screen and (max-width: 1026px) {
+  .earphones_page {
+    top: 1350px;
+  }
+  .earphones_page_history {
+    
+    top: -1400px;
+  }
+  .earphones_footer {
+    top: 2500px;
+  }
+}
+
+@media only screen and (max-width: 574px) {
+  .earphones_page {
+    top: 1600px;
+  }
+  .earphones_page_history {
+    
+    top: -1500px;
+  }
+  .earphones_footer {
+    top: 3000px;
+  }
+}

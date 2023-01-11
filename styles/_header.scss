@@ -1,0 +1,218 @@
+@import './variables';
+
+.header_seaction {
+  position: absolute;
+  width: 100%;
+
+  height: 570px;
+  background-image: url('/assets/home/desktop/image-hero.jpg');
+  background-position: center;
+  object-fit: cover;
+}
+
+.header {
+  position: absolute;
+  width: 55%;
+  height: 50px;
+  left: 22.5%;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 45px;
+  padding-bottom: 40px;
+  border-bottom: thin solid rgba(#fff, 0.2);
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+ul {
+  position: relative;
+  width: 100%;
+  align-self: center;
+  left: 45%;
+  justify-content: space-around;
+  li span {
+    color: $primaryColor;
+  }
+  li:hover {
+    color: $primaryColor;
+  }
+}
+
+.header_links li {
+  display: inline;
+  margin: 0 10px;
+}
+.cart {
+  display: flex;
+  left: 25%;
+  margin-left: auto;
+}
+
+//media
+
+@media only screen and (max-width: 1426px) {
+  .header_seaction {
+    background-image: url('/assets/home/tablet/image-header.jpg');
+    background-position: cover;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+  }
+  .header {
+    width: 100%;
+    left: 0;
+  }
+  .cart {
+    margin-right: 5%;
+  }
+}
+@media only screen and (max-width: 740px) {
+  .header_seaction {
+    background-image: url('/assets/home/mobile/image-header.jpg');
+    background-position: cover;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+  }
+  .header {
+    width: 100%;
+    left: 0;
+    .hamburger {
+      margin-left: 5%;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .logo {
+    margin-left: -10px;
+  }
+  .header .hamburger {
+    margin-left: 5%;
+  }
+  .cart {
+    margin-left: -5%;
+  }
+}
+
+@media only screen and (max-width: 1026px) {
+  .header {
+    ul {
+      display: none;
+    }
+
+    .hamburger {
+      height: 60px;
+      width: 60px;
+      display: inline-block;
+      border: none;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 100;
+      cursor: pointer;
+      transform: scale(0.8);
+      margin-right: 20px;
+      margin-top: -8px;
+    }
+    .hamburger::after {
+      position: absolute;
+      content: '';
+      border-radius: 50%;
+      border: 3px solid white;
+      animation: hamburger_puls 1.3s infinite;
+    }
+    // ul.active {
+    //   left: 0;
+    // }
+    .hamburger::after {
+      position: absolute;
+      content: '';
+      height: 100%;
+      width: 100%;
+      border-radius: none;
+    }
+    .hamburger .bar {
+      height: 3px;
+      width: 30px;
+      position: absolute;
+      background-color: white;
+      z-index: -4;
+    }
+    .hamburger .bar::before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-color: white;
+      transition: 0.3s ease;
+      transition-property: top, bottom;
+    }
+    .hamburger .bar::after {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-color: white;
+      transition: 0.3s ease;
+      transition-property: top, bottom;
+    }
+    .hamburger .bar::after {
+      top: 8px;
+    }
+    .hamburger .bar::before {
+      bottom: 8px;
+    }
+    .hamburger.active .bar::after {
+      top: 0;
+    }
+    .hamburger.active .bar::before {
+      bottom: 0;
+    }
+  }
+}
+@keyframes hamburger_puls {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+}
+.hamb_menu {
+  display: none;
+}
+@media only screen and (max-width: 1026px) {
+.hamburger.active {
+  .bar {
+    width: 800px;
+    height: 400px;
+    background-color: white;
+    position: absolute;
+    top: 90px;
+  
+    left: 200%;
+    height: 340px; 
+    border-radius: 8px;
+  }
+  .hamb_menu {
+    display: block;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    background-color: white;
+    color: black;
+    top: -610px;
+    left: 550%;
+
+  }
+}}

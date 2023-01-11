@@ -1,0 +1,108 @@
+@import './variables';
+
+@mixin newProduct {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+@mixin productDescription {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+}
+
+@mixin button {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 14px 32px;
+  font-size: 13px;
+  border: none;
+}
+
+@mixin secondary_button {
+  margin-top: 30px;
+  border: 2px solid black;
+  background: #f1f1f1;
+  color: black;
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}
+
+@mixin headers {
+  position: absolute;
+  width: 100%;
+  height: 44px;
+  top: 185px;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 44px;
+  text-align: center;
+  letter-spacing: 1.42857px;
+  text-transform: uppercase;
+  align-self: center;
+  color: #ffffff;
+}
+
+@mixin labelStyles {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.214286px;
+  color: #000000;
+}
+@mixin placeholderStyle {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: -0.25px;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.4;
+}
+@mixin inputStyle {
+  box-sizing: border-box;
+  height: 55px;
+  width: 41%;
+  position: absolute;
+  background: #ffffff;
+  border: 1px solid #cfcfcf;
+  border-radius: 8px;
+}
+@mixin legendStyle {
+  position: absolute;
+  height: 25px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 0.928571px;
+  text-transform: uppercase;
+  color: #d87d4a;
+  width: 100%;
+}

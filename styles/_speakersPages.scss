@@ -1,0 +1,34 @@
+.speakers_page {
+  top: 1870px;
+}
+.speakers_page_history {
+  position: relative;
+  top: -500px;
+}
+.speaker_footer {
+  top: 3050px;
+}
+
+@media only screen and (max-width: 1026px) {
+  .speakers_page {
+    top: 1970px;
+  }
+  .speakers_page_history {
+    top: -750px;
+  }
+  .speaker_footer {
+    top: 3150px;
+  }
+}
+
+@media only screen and (max-width: 574px) {
+  .speakers_page {
+    top: 2420px;
+  }
+  .speakers_page_history {
+    top: -700px;
+  }
+  .speaker_footer {
+    top: 3750px;
+  }
+}
